@@ -16,4 +16,4 @@ Wire a simple RC filter to pin 11 for the output
 To hear the effect of removing the antialiasing, ground pin 2
 
 Audio example, no antialiasing followed by antialiasing:
-<audio controls src="media/blepsweep.ogg">Sorry, it's not possible to play this clip</audio>
+https://raw.githubusercontent.com/ErroneousBosh/slttblep/master/media/blepsweep.ogg
