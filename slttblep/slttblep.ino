@@ -17,7 +17,7 @@ volatile unsigned char osc, oscp, frac, inp, dly; // oscillator blep
 volatile unsigned long theta, phase;  // oscillator state and frequency offset
 
 unsigned int adc; // current pot value
-unsigned int ref = 31250; // theoretical sample rate, adjust to tune
+unsigned int ref = 31372; // theoretical sample rate, adjust to tune, clock crystal divided by 510
 
 void setup() {
   // configure timer for clock prescaler=1 PWM A on 11
@@ -66,4 +66,3 @@ ISR(TIMER2_OVF_vect) {
 
   OCR2A = inp;  // output the sample to PWM
 }
-
